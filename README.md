@@ -26,7 +26,7 @@ My Hyprland setup based on Simples Hyprland, tweaked for my needs.
    sudo sh install.sh
    ```
 
-### Key Bindings 🎹
+### Key Bindings
 
 After installation, you'll want to familiarize yourself with the default key bindings. Here are some essential shortcuts to get you started:
 
@@ -64,15 +64,20 @@ After installation, you'll want to familiarize yourself with the default key bin
 
 #### Miscellaneous
 
-- `SUPER + L`: Lock screen
 - `Super + V`: Open the clipboard history and paste the selected item.
 - `Super + P`: Open the color picker and copy the selected color to the clipboard.
-- `Super + L`: Lock the screen.
-- `Super + Escape`: Open the logout menu.
 - `Ctrl + Escape`: Toggle the Waybar (kill if running, start if not).
 - `Print Screen`: Take a screenshot of the entire screen and copy it to the clipboard.
 - `Super + Print Screen`: Take a screenshot of the active window and copy it to the clipboard.
 - `Super + Alt + Print Screen`: Select an area to take a screenshot and copy it to the clipboard.
+
+#### Power controls
+
+- `Super + SHIFT + CTRL + L`: Lock screen
+- `Super + SHIFT + CTRL + P`: Power Off
+- `Super + SHIFT + CTRL + R`: Reboot
+- `Super + SHIFT + CTRL + S`: Suspend
+- `Super + SHIFT + CTRL + H`: Hibernate
 
 Make sure to have applications installed corresponding to the binds. Feel free to customize these keybindings to better suit your needs. You can customize these and add more in your Hyprland configuration file (`~/.config/hypr/hyprland.conf`).
 
