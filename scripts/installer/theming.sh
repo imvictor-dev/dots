@@ -15,6 +15,12 @@ run_command "pacman -S --noconfirm qt5ct qt6ct kvantum" "Install Qt5, Qt6 Settin
 
 run_command "tar -xvf /home/$SUDO_USER/simple-hyprland/assets/fonts/MonoLisa.tar.xz -C /usr/share/fonts/" "Install MonoLisa Variable font" "yes" 
 
+run_command "tar -xvf /home/$SUDO_USER/simple-hyprland/assets/fonts/SF-Pro-Display.tar.xz -C /usr/share/fonts/" "Install SF-Pro-Display font" "yes" 
+
+run_command "tar -xvf /home/$SUDO_USER/simple-hyprland/assets/fonts/SF-Pro-Text.tar.xz -C /usr/share/fonts/" "Install SF-Pro-Text font" "yes" 
+
+run_command "tar -xvf /home/$SUDO_USER/simple-hyprland/assets/fonts/SF-Pro-Rounded.tar.xz -C /usr/share/fonts/" "Install SF-Pro-Rounded font" "yes" 
+
 run_command "tar -xvf /home/$SUDO_USER/simple-hyprland/assets/themes/Catppuccin-Dark.tar.xz -C /usr/share/themes/" "Install Catppuccin Mocha GTK theme" "yes" 
 
 run_command "tar -xvf /home/$SUDO_USER/simple-hyprland/assets/icons/Tela-circle-dracula.tar.xz -C /usr/share/icons/" "Install Tela Circle Dracula icon theme" "yes"

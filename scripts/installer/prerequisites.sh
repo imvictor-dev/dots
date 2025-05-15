@@ -17,7 +17,9 @@ if run_command "pacman -S --noconfirm --needed git base-devel" "Install YAY (Mus
 fi
 run_command "pacman -S --noconfirm pamixer" "Install Pamixer for audio control (Recommended)" "yes" 
 
-run_command "pacman -S --noconfirm ttf-cascadia-code-nerd ttf-cascadia-mono-nerd ttf-fira-code ttf-fira-mono ttf-fira-sans ttf-firacode-nerd ttf-jetbrains-mono-nerd ttf-jetbrains-mono ttf-nerd-fonts-symbols ttf-nerd-fonts-symbols-mono" "Installing Nerd Fonts and Symbols (Recommended)" "yes" 
+run_command "pacman -S --noconfirm ttf-cascadia-code-nerd ttf-cascadia-mono-nerd ttf-fira-code ttf-fira-mono ttf-fira-sans ttf-firacode-nerd ttf-jetbrains-mono-nerd ttf-jetbrains-mono" "Installing Nerd Fonts (Recommended)" "yes" 
+
+run_command "ttf-nerd-fonts-symbols ttf-nerd-fonts-symbols-mono" "Installing Symbols (Recommended)" "yes" 
 
 run_command "pacman -S --noconfirm sddm && systemctl enable sddm.service" "Install and enable SDDM (Recommended)" "yes"
 
