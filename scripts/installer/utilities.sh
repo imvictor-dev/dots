@@ -18,7 +18,7 @@ run_command "cp -r /home/$SUDO_USER/simple-hyprland/configs/tofi /home/$SUDO_USE
 run_command "pacman -S --noconfirm cliphist" "Install Cliphist - Clipboard Manager" "yes"
 
 run_command "yay -S --sudoloop --noconfirm swww" "Install SWWW for wallpaper management" "yes" "no"
-run_command "mkdir -p /home/$SUDO_USER/.config/hypr/assets/backgrounds && tar -xvf /home/$SUDO_USER/simple-hyprland/assets/backgrounds/backgrounds.tar.xz /home/$SUDO_USER/.config/hypr/assets/backgrounds/" "Copy wallpapers to backgrounds folder? (Recommended)" "yes" "no"
+run_command "mkdir -p /home/$SUDO_USER/.config/hypr/assets/backgrounds && tar -xvf /home/$SUDO_USER/simple-hyprland/assets/backgrounds/backgrounds.tar.xz -C /home/$SUDO_USER/.config/hypr/assets/backgrounds/" "Copy wallpapers to backgrounds folder? (Recommended)" "yes" "no"
 
 run_command "yay -S --waypaper --noconfirm waypaper" "Install GUI for swww" "yes" "no"
 
