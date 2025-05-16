@@ -15,11 +15,7 @@ run_command "pacman -S --noconfirm qt5ct qt6ct kvantum" "Install Qt5, Qt6 Settin
 
 run_command "tar -xvf /home/$SUDO_USER/simple-hyprland/assets/fonts/MonoLisa.tar.xz -C /usr/share/fonts/" "Install MonoLisa Variable font" "yes" 
 
-run_command "tar -xvf /home/$SUDO_USER/simple-hyprland/assets/fonts/SF-Pro-Display.tar.xz -C /usr/share/fonts/" "Install SF-Pro-Display font" "yes" 
-
 run_command "tar -xvf /home/$SUDO_USER/simple-hyprland/assets/fonts/SF-Pro-Text.tar.xz -C /usr/share/fonts/" "Install SF-Pro-Text font" "yes" 
-
-run_command "tar -xvf /home/$SUDO_USER/simple-hyprland/assets/fonts/SF-Pro-Rounded.tar.xz -C /usr/share/fonts/" "Install SF-Pro-Rounded font" "yes" 
 
 run_command "tar -xvf /home/$SUDO_USER/simple-hyprland/assets/themes/Catppuccin-Dark.tar.xz -C /usr/share/themes/" "Install Catppuccin Mocha GTK theme" "yes" 
 
@@ -28,6 +24,8 @@ run_command "tar -xvf /home/$SUDO_USER/simple-hyprland/assets/icons/Tela-circle-
 run_command "yay -S --sudoloop --noconfirm kvantum-theme-catppuccin-git" "Install Catppuccin theme for Kvantum" "yes" "no"
 
 run_command "cp -r /home/$SUDO_USER/simple-hyprland/configs/kitty /home/$SUDO_USER/.config/" "Copy Catppuccin theme configuration for Kitty terminal" "yes" "no"
+
+run_command 'sudo tar -xvf /home/$SUDO_USER/simple-hyprland/assets/sddm/catppuccin-mocha.tar.xz -C /usr/share/sddm/themes/ && echo -e "[Theme]\nCurrent=catppuccin-mocha" | sudo tee /etc/sddm.conf && sudo pacman -S --noconfirm qt6-svg qt6-declarative qt5-quickcontrols2' 'Install Catppuccin SDDM theme' 'yes' 'no'
 
 # Add instructions to configure theming
 print_info "\nPost-installation instructions:"
