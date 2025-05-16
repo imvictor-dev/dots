@@ -9,9 +9,9 @@ source $SCRIPT_DIR/helper.sh
 log_message "Installation started for theming section"
 print_info "\nStarting theming setup..."
 
-run_command "pacman -S --noconfirm nwg-look" "Install nwg-look for GTK theme management" "yes" 
+run_command "sudo pacman -S --noconfirm nwg-look" "Install nwg-look for GTK theme management" "yes" 
 
-run_command "pacman -S --noconfirm qt5ct qt6ct kvantum" "Install Qt5, Qt6 Settings, and Kvantum theme engines" "yes"
+run_command "sudo pacman -S --noconfirm qt5ct qt6ct kvantum" "Install Qt5, Qt6 Settings, and Kvantum theme engines" "yes"
 
 run_command "tar -xvf /home/$SUDO_USER/simple-hyprland/assets/fonts/MonoLisa.tar.xz -C /usr/share/fonts/" "Install MonoLisa Variable font" "yes" 
 
