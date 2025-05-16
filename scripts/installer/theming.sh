@@ -25,7 +25,7 @@ run_command "yay -S --sudoloop --noconfirm kvantum-theme-catppuccin-git" "Instal
 
 run_command "cp -r /home/$SUDO_USER/simple-hyprland/configs/kitty /home/$SUDO_USER/.config/" "Copy Catppuccin theme configuration for Kitty terminal" "yes" "no"
 
-run_command 'sudo rm -rf /usr/share/sddm/themes/* && sudo tar -xvf /home/$SUDO_USER/simple-hyprland/assets/sddm/sddm-catppuccin-mocha.tar.xz -C /usr/share/sddm/themes/' 'Install Catppuccin SDDM theme' 'yes' 'no'
+run_command "sudo rm -rf /usr/share/sddm/themes/* && sudo tar -xvf /home/$SUDO_USER/simple-hyprland/assets/sddm/sddm-catppuccin-mocha.tar.xz -C /usr/share/sddm/themes/" "Install Catppuccin SDDM theme" "yes" "no"
 
 # Add instructions to configure theming
 print_info "\nPost-installation instructions:"
