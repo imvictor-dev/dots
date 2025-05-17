@@ -39,6 +39,7 @@ After installation, you'll want to familiarize yourself with the default key bin
 - `Super + S`: Open the alternative editor (`$editor-alt`).
 - `Super + F`: Open the file manager (`$fileManager`).
 - `Super + A`: Open the application menu (`$menu`).
+- `Super + Shift + W`: Open waypaper (`$wallpaper`).
 - `Super + M`: Exit Hyprland.
 
 #### Window Management & Workspace Navigation
