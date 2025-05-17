@@ -21,8 +21,6 @@ run_command "sudo pacman -S --noconfirm ttf-cascadia-code-nerd ttf-cascadia-mono
 
 run_command "sudo pacman -S --noconfirm ttf-nerd-fonts-symbols ttf-nerd-fonts-symbols-mono" "Installing Symbols (Recommended)" "yes" "no"
 
-run_command "sudo pacman -S --noconfirm sddm && systemctl enable sddm.service" "Install and enable SDDM (Recommended)" "yes"
-
 run_command "yay -S --sudoloop --noconfirm zen-browser-bin" "Install Zen Browser" "yes" "no" 
 
 run_command "sudo pacman -S --noconfirm kitty" "Install Kitty (Recommended)" "yes"
