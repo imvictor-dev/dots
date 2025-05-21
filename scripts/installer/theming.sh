@@ -21,6 +21,8 @@ run_command "tar -xvf /home/$SUDO_USER/simple-hyprland/assets/themes/Catppuccin-
 
 run_command "tar -xvf /home/$SUDO_USER/simple-hyprland/assets/icons/Tela-circle-dracula.tar.xz -C /usr/share/icons/" "Install Tela Circle Dracula icon theme" "yes"
 
+run_command "tar -xvf /home/$SUDO_USER/simple-hyprland/assets/icons/Bibata-Modern-Classic.tar.xz -C /usr/share/icons/" "Install Bibata Modern Classic cursor?" "yes"
+
 run_command "yay -S --sudoloop --noconfirm kvantum-theme-catppuccin-git" "Install Catppuccin theme for Kvantum" "yes" "no"
 
 run_command "cp -r /home/$SUDO_USER/simple-hyprland/configs/kitty /home/$SUDO_USER/.config/" "Copy Catppuccin theme configuration for Kitty terminal" "yes" "no"
